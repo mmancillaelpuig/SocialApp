@@ -178,11 +178,11 @@ public class newPostFragment extends Fragment {
                         return;
                     }
 
-                    String downloadUrl =
-                            "https://cloud.appwrite.io/v1/storage/buckets/" +
-                                    getString(R.string.APPWRITE_STORAGE_BUCKET_ID) + "/files/" + result.getId() +
-                                    "/view?project=" + getString(R.string.APPWRITE_PROJECT_ID) + "&project=" +
-                                    getString(R.string.APPWRITE_PROJECT_ID) + "&mode=admin";
+                    // URL corregida
+                    String downloadUrl = client.getEndpoint() + "/storage/buckets/" +
+                            getString(R.string.APPWRITE_STORAGE_BUCKET_ID) + "/files/" +
+                            result.getId() + "/view?project=" +
+                            getString(R.string.APPWRITE_PROJECT_ID);
                     mainHandler.post(() ->
                     {
                         guardarEnAppWrite(user, postText, downloadUrl);
@@ -325,7 +325,7 @@ public class newPostFragment extends Fragment {
     private void tomarFoto() {
         try {
             mediaUri = FileProvider.getUriForFile(requireContext(),
-                    "com.example.socialappwrite" + ".fileprovider",
+                    "com.example.socialapp" + ".fileprovider",
                     File.createTempFile("img", ".jpg",
 
                             requireContext().getExternalFilesDir(Environment.DIRECTORY_PICTURES))
@@ -338,7 +338,7 @@ public class newPostFragment extends Fragment {
     private void tomarVideo() {
         try {
             mediaUri = FileProvider.getUriForFile(requireContext(),
-                    "com.example.socialappwrite" + ".fileprovider",
+                    "com.example.socialapp" + ".fileprovider",
                     File.createTempFile("vid", ".mp4",
 
                             requireContext().getExternalFilesDir(Environment.DIRECTORY_MOVIES)));

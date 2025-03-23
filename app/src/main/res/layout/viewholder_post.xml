@@ -63,6 +63,19 @@
                     android:layout_gravity="center_vertical"
                     android:text="200K"/>
 
+                <ImageView
+                    android:id="@+id/deleteImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_delete"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/shareImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_share"/>
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

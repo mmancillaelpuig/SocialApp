@@ -50,4 +50,6 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     annotationProcessor ("com.github.bumptech.glide:compiler:4.11.0")
+    implementation("io.appwrite:sdk-for-android:5.0.0")
+
 }

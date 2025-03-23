@@ -6,10 +6,13 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="APPWRITE_STORAGE_BUCKET_ID">67bf4fe800360ccc2ca4</string>
-    <string name="APPWRITE_DATABASE_ID">67b772b0001d04ff6f53</string>
-    <string name="APPWRITE_POSTS_COLLECTION_ID">67b7735b00347f91dff8</string>
-    <string name="APPWRITE_PROJECT_ID">67ae3ce0003d785d101f</string>
+    <string name="APPWRITE_STORAGE_BUCKET_ID">67c88dcc002ec5d438a0</string>
+    <string name="APPWRITE_DATABASE_ID">67c88ddf0024705bdc0d</string>
+    <string name="APPWRITE_POSTS_COLLECTION_ID">67c88e12001be4f11084</string>
+    <string name="APPWRITE_PROJECT_ID">67ae3cde001ae58e8573</string>
+    <string name="APPWRITE_PROFILE_BUCKET_ID">67dff801000357c938c4</string>
+    <string name="APPWRITE_USERS_COLLECTION_ID">67dff82f0035f65b4936</string>
+    <string name="APPWRITE_ENDPOINT">https://cloud.appwrite.io/v1</string>
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
